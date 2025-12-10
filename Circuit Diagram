@@ -1,0 +1,34 @@
+       Raspberry Pi Pico W
+                 ---------------------
+                 |                   |
+    GP18  ------>| IN1  (L298N)      |
+    GP19  ------>| IN2  (L298N)      |
+    GP20  ------>| IN3  (L298N)      |
+    GP21  ------>| IN4  (L298N)      |
+    GND  ------->| GND (L298N)       |
+                 |                   |
+                 ---------------------
+                          |
+                          | common ground
+                          ▼
+          -------------------------------
+          |          L298N               |
+          |------------------------------|
+          | IN1 ← GP18                   |
+          | IN2 ← GP19                   |
+          | IN3 ← GP20                   |
+          | IN4 ← GP21                   |
+          | ENA → +5V                    |
+          | ENB → +5V                    |
+          | OUT1 → Left Motor +          |
+          | OUT2 → Left Motor -          |
+          | OUT3 → Right Motor +         |
+          | OUT4 → Right Motor -         |
+          | 12V ← 11.1V Battery +       |
+          | GND ← 11.1V Battery -       |
+          -------------------------------
+             |                   |
+             |                   |
+     Left Motors (front+rear)   Right Motors (front+rear)
+      OUT1 + → +                OUT3 + → +
+      OUT2 - → -                OUT4 - → -
